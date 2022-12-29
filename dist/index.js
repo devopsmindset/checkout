@@ -7539,7 +7539,7 @@ class GitCommandManager {
             if (!refSpec.some(x => x === refHelper.tagsRefSpec)) {
                 args.push('--no-tags');
             }
-            args.push('--prune', '--progress', '--no-recurse-submodules');
+            args.push('--prune', '--progress');
             if (fetchDepth && fetchDepth > 0) {
                 args.push(`--depth=${fetchDepth}`);
             }
